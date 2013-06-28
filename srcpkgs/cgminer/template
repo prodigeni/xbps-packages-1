@@ -1,7 +1,7 @@
 # Template file for 'cgminer'
 pkgname=cgminer
 version=3.3.1
-revision=1
+revision=2
 build_style=gnu-configure
 configure_args="--disable-adl --enable-bitforce
  --enable-icarus --enable-avalon --enable-modminer --enable-ztex"
@@ -42,3 +42,4 @@ if [ "$build_option_opencl" ]; then
 else
 	configure_args+=" --disable-scrypt --disable-opencl"
 fi
+configure_args+=" --enable-bflsc"
