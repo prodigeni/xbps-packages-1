@@ -1,6 +1,6 @@
 # Template file for 'cgminer'
 pkgname=cgminer
-version=3.0.0
+version=3.3.1
 revision=1
 build_style=gnu-configure
 configure_args="--disable-adl --enable-bitforce
@@ -12,7 +12,7 @@ maintainer="Juan RP <xtraeme@gmail.com>"
 license="GPL-3"
 homepage="https://github.com/ckolivas/cgminer"
 distfiles="http://ck.kolivas.org/apps/cgminer/cgminer-${version}.tar.bz2"
-checksum=a50e2f594377f10ab91e92e1e0d79ccdb268b34dcaca2193c231330266583d55
+checksum=72951e84067f339186fd5f5e799f2f92cf8c354c7798f9d159e83d1bdbcc5b87
 
 post_install() {
 	vinstall example.conf 644 etc cgminer.conf
